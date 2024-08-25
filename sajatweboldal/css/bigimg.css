@@ -1,0 +1,30 @@
+body {
+    background: #000000 url('../Képek/Főoldal/back-ground.png') center center/cover no-repeat;
+  color: #ffffff;
+    margin: 0;
+    overflow: hidden; 
+}
+
+.bigimg {
+    text-align: center;
+}
+
+.bigimg figure {
+    margin: 0; 
+}
+#vidleiras {
+    background-color: #1e2225;
+    padding: 10px;
+    max-width: 100%;
+    margin-top: auto;
+    display: flex;
+    text-align: center;
+  }
+  #vidleiras  a{
+    color:#ffffff
+  }
+.bigimg img {
+    
+    height: 100vh; 
+    object-fit: cover; 
+}

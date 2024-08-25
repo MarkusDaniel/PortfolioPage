@@ -1,0 +1,651 @@
+/* Import Bootstrap */
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+
+/* Global Styles */
+body {
+  background: #000000 url('../Képek/Főoldal/back-ground.png') center center/cover no-repeat;
+  color: #ffffff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+  margin: 0;
+  padding: 0;
+  font-size: 2vh;
+  max-width: 100%;
+}
+video {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 10px; 
+}
+video::cue {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1, h2, p, q {
+  font-family: 'Oswald', sans-serif; 
+}
+main h1{
+  text-align: center;
+}
+nav a {
+  text-decoration: underline;
+}
+.navbar {
+  margin: 0;
+}
+header nav {
+  background-color: #e2fae0ec;
+  padding: 5px 5px 5px 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: 2em;
+  border-top: 1px solid black;
+  border-bottom:1px solid black ;
+}
+
+
+
+header nav ul li{
+  display: inline;
+  white-space: nowrap;
+  
+}
+#PBR{
+  margin-bottom: 30px;
+}
+header nav a{
+  text-decoration: none;
+  font-variant: small-caps;
+  font-size: 1.3em;
+  margin-right: 1em;
+}
+
+header nav a:link{
+  color: black;
+}
+
+header nav a:visited{
+  color: #2c276e;
+}
+
+header nav a:hover{
+  text-decoration: underline;
+}
+header{
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  padding-bottom: 0;
+  opacity: 0.9;
+}
+article + nav{
+  text-align: right;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+article p{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a[href="#oldalmenu"] {
+  text-decoration: none;
+}
+
+
+/* Flex Container Styles */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 150vh;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  min-height: calc(100vh - 50px - 50px);
+}
+.carousel-container{
+  max-width: 120vh;
+  align-content: center;
+  padding-bottom: 0.5em;
+  
+}
+
+
+/* Typography Styles */
+h1, h2, p {
+  color: #000000;
+  font-family: 'Oswald', sans-serif;
+  text-size-adjust: 100%;
+}
+
+#PBR h2{
+  padding-bottom: 0.5em;
+}
+
+p {
+  max-width: 100%;
+  margin: 10px 0;
+  text-align: justify;
+}
+
+/* List Styles */
+ul {
+  padding: 0;
+  margin: 0;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* Article Styles */
+.flex-container article {
+  flex-basis: 100%;
+  margin: 1em 0;
+}
+#PBR article{
+  margin-bottom: 2rem;
+}
+
+/* Section Styles */
+.section {
+  display: flex;
+  flex-direction: column;
+}
+.section h2{
+  text-align: center;
+  margin-bottom: 1em;
+}
+.section a{
+  color:#8b3e92;
+  text-align:center;
+
+
+}
+
+.technical-properties {
+  margin-right: 3em;
+}
+
+/* Image Styles */
+.image {
+  max-width: 50%;
+  height: auto;
+}
+
+.sidebyside {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+/* Quote Styles */
+q {
+  display: block;
+  background-color: rgba(197, 178, 146, 0.8);
+  width: 55vw;
+  font-style: italic;
+  border: 1px solid #999;
+  border-color: #000000;
+  padding: 10px;
+  margin: 0 10px 10px 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Flex Box Styles */
+.flex-box-1, .flex-box-1 > img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-box-1 > img {
+  width: 40vh;
+  height: 45vh;
+}
+
+.flex-image-1 > img {
+  width: 25vh;
+  height: 30vh;
+  margin-right: 2.5vh;
+  margin-left: 2.5vh;
+}
+
+/* Aside Styles */
+aside > p {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/*Table Styles */
+table {
+  border: 3px double rgb(0, 0, 0);
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+details {
+  padding-bottom: 1em;
+}
+
+table td, table th{
+  border: 1px solid rgb(0, 0, 0);
+  padding: 5px;
+}
+table th {
+  background-color: #a6e79d;
+  text-align: center;
+}
+table td {
+  background-color: #def0db;
+}
+/* Bar Styles */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+
+/* Carousel Styles */
+.carousel-inner > .item > img {
+  width: 600px;
+  height: 770px;
+}
+#vidleiras {
+  background-color: #1e2225;
+  padding: 10px;
+  max-width: 100%;
+  margin-top: auto;
+  display: flex;
+}
+#vidleiras  a{
+  color:#ffffff
+}
+.fixed-link{
+  padding:5px; 
+  background-color: #1e2225;
+  border-radius: 20px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #1e2225;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+  width: 100%;
+}
+
+
+/* Figcaption and Social Media Styles */
+figcaption, .social-media, .social-media a, .social-media img {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Form Styles */
+.nev-area input, .uzenet-container, .uzenet-container textarea, .uzenet-container label {
+  display: flex;
+  flex-direction: column;
+}
+form {
+  max-width: 600px; 
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1em;
+}
+
+.uzenet-container textarea, .nev-area input {
+  opacity: 0.5;
+}
+
+.uzenet-container label {
+  margin-bottom: 5px;
+}
+
+/* ID Selector Styles */
+.pelda {
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.pelda img {
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  
+}
+
+#materials{
+  margin-top: 1em;
+}
+
+/* Additional Footer Styles */
+footer {
+  background-color: #1e2225;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Gyengénlátóknak */
+#gyengenlato {
+ position:sticky;
+ margin-bottom: 0;
+ 
+}
+main a:not(.no-underline) {
+  text-decoration: underline; /* Aláhúzás */
+}
+
+
+#gyengenlato span{
+  background-image: url('../kepek/ikonkeszlet.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+
+}
+
+#normalbetu {
+  display: none;
+}
+
+
+/* Modkit Styles */
+.modkit, .modkit figure, .modkit img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+
+.modkit img {
+  max-width: 100%;
+  height: auto;
+}
+.text-container{
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.text-container a{
+  color:#4201aa;
+}
+#DigitalIllustration{
+  padding-top: 1em;
+ 
+}
+
+
+
+/* Media Querries */
+
+@media screen and (max-width: 600px) {
+  /* Mobile view styles */
+  #uzenet {
+    width: 100%; 
+    max-width: 100%;
+  }
+  body, article, p, q, aside, section, nav, form, table, .modkit, .sidebyside, .flex-container, main {
+    font-family: 'Arial', sans-serif; 
+  }
+ 
+  h1, h2 {
+    max-width: 100%;
+    text-align: left;
+    margin: 0;
+    font-size: 2.6vh; 
+  }
+  .flex-container article {
+    flex-basis: 20%;
+    text-align: justify;
+  }
+  .nev-area {
+    max-width: 50%;
+  }
+
+  .flex-box-1 {
+    flex-direction: column-reverse;
+  }
+  .uzenet-container label {
+    margin-bottom: 5px;
+  }
+  .flex-container,
+  .flex-box-1 {
+    flex-direction: column;
+  }
+  .pelda img {
+    max-width: 100%;
+  }
+  .uzenet-container textarea {
+    max-width: 100%;
+  }
+  .flex-container article {
+    text-align: left;
+  }
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+  .sidebyside {
+    flex-direction: column;
+  }
+  
+
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Tablet view styles */
+  .text-container aside q {
+    float: none;
+    width: 300px;
+    margin: 0;
+  }
+  .pelda img {
+    max-width: 80%;
+  }
+  #uzenet {
+    width: 100%; 
+    max-width: 100%;
+  }
+  .uzenet-container textarea {
+    max-width: 100%;
+  }
+  .carousel-container{
+    margin-left: 1vh;
+  }
+
+}
+
+@media screen and (min-width: 1025px) {
+  /* Desktop view styles */
+
+  body, article, p, q, aside, section, nav, form, table, .modkit, .sidebyside, .flex-container, main {
+    font-size: 2.6vh; 
+  }
+  #DigitalIllustration h2{
+    font-size: 4vh;
+  }
+  .fixed-link{
+    border-radius: 60px;
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+  main h1{
+    font-size: 6vh;
+    text-align: center;
+  }
+  .pelda img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  #hangya h2{
+    font-size: 4vh;
+  }
+  #hangya h3{
+    font-size: 3vh;
+  }
+  .technical-properties h3{
+    font-size: 3vh;
+  }
+  #GuiltyGear h2{
+    font-size: 4vh;
+  }
+  #Handpainted h2{
+    font-size: 4vh;
+  }
+  #salamandra h2{
+    font-size: 4vh;
+  }
+  #salamandra h3{
+    font-size: 3vh;
+  }
+  #tartalom h2{
+    font-size: 4vh
+  }
+  .pelda {
+    max-width: 100%;
+  }
+
+.flex-container {
+    min-width: 120vh; 
+    margin: 0 auto; 
+  }
+main h2 {
+  font-size: 4vh;
+}
+.carousel-container{
+  margin-left: 10vh;
+}
+.modkit{
+  margin-left: 10vh;
+}
+#kerdoiv h4 {
+  font-size: 3vh;
+}
+form {
+  margin-right:0;
+  max-width: 100%; 
+}
+
+.sideybyside {
+  align-content: center;
+  margin-left: 0;
+  margin-right: 20vh;
+}
+#modkit_leiras h2{
+  font-size: 4vh;
+}
+#modkit_leiras h3{
+  font-size: 3vh;
+}
+#modkitkep h2{
+  font-size: 4vh;
+  text-align: center;
+}
+}
+
+@media (min-width: 600px) {
+  /* Additional styles for larger screens */
+  .modkit figure {
+    flex-basis: 48%;
+  }
+
+  .modkit figure:last-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 900px) {
+  /* Additional styles for even larger screens */
+  .modkit figure {
+    flex-basis: 30%;
+    margin: 1em 0;
+  }
+
+  .modkit figure:first-child {
+    margin-right: 0.7em;
+    float: left;
+  }
+
+  .modkit figure:last-child {
+    margin-left: 0.7em;
+    float: right;
+  }
+}
+
+@media print {
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 3cm;
+  }
+
+  header, nav, aside, footer, .carousel_control-container {
+    display: none;
+  }
+
+  .flex-container {
+    max-width: 100%;
+  }
+  form{
+    display: none;
+  }
+
+  figure{
+    page-break-inside: avoid !important;
+  }
+  article {
+    page-break-inside: avoid !important;
+  }
+
+  img {
+    max-width: 50% !important;
+    page-break-inside: avoid !important;
+  }
+
+  .image {
+    max-width: 50% !important;
+    page-break-inside: avoid !important;
+  }
+
+  video {
+    display: none;
+  }
+
+  h1, h2, p, q {
+    color: #000000;
+  }
+}
